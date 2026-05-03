@@ -1,0 +1,476 @@
+{
+  "vulnerabilities": {
+    "Apache/2.4.49": {
+      "cve": "CVE-2021-41773",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Path traversal and remote code execution vulnerability in Apache HTTP Server 2.4.49",
+      "remediation": "Upgrade to Apache HTTP Server 2.4.51 or later"
+    },
+    "Apache/2.4.50": {
+      "cve": "CVE-2021-42013",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Incomplete fix for CVE-2021-41773 allows path traversal and RCE",
+      "remediation": "Upgrade to Apache HTTP Server 2.4.51 or later"
+    },
+    "Apache/2.4.7": {
+      "cve": "CVE-2017-15715",
+      "severity": "HIGH",
+      "cvss": 8.1,
+      "description": "FilesMatch bypass via newline character in filename",
+      "remediation": "Upgrade to Apache HTTP Server 2.4.30 or later"
+    },
+    "Apache/2.2.34": {
+      "cve": "CVE-2017-9798",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Optionsbleed - use-after-free in HTTP OPTIONS method",
+      "remediation": "Upgrade to Apache HTTP Server 2.4.28 or later"
+    },
+    "Apache/2.2.14": {
+      "cve": "CVE-2011-3192",
+      "severity": "HIGH",
+      "cvss": 7.8,
+      "description": "Range header DoS (Apache Killer) vulnerability",
+      "remediation": "Upgrade to Apache HTTP Server 2.2.21 or later"
+    },
+    "nginx/1.14.0": {
+      "cve": "CVE-2019-20372",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "description": "HTTP request smuggling via error pages in nginx 1.14.x",
+      "remediation": "Upgrade to nginx 1.17.7 or later"
+    },
+    "nginx/1.16.0": {
+      "cve": "CVE-2019-9511",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "HTTP/2 Data Dribble - resource exhaustion DoS",
+      "remediation": "Upgrade to nginx 1.16.1 or later"
+    },
+    "nginx/1.6.2": {
+      "cve": "CVE-2016-0742",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Resolver NULL pointer dereference causing worker process crash",
+      "remediation": "Upgrade to nginx 1.8.1 or later"
+    },
+    "OpenSSH_7.4": {
+      "cve": "CVE-2018-15473",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "description": "User enumeration vulnerability via malformed authentication requests",
+      "remediation": "Upgrade to OpenSSH 7.8 or later"
+    },
+    "OpenSSH_6.6": {
+      "cve": "CVE-2016-0777",
+      "severity": "HIGH",
+      "cvss": 8.1,
+      "description": "Information leak via roaming support allows private key theft",
+      "remediation": "Upgrade to OpenSSH 7.1p2 or later and disable UseRoaming"
+    },
+    "OpenSSH_5.3": {
+      "cve": "CVE-2016-10009",
+      "severity": "HIGH",
+      "cvss": 7.3,
+      "description": "Arbitrary code execution via agent forwarding with crafted PKCS#11 modules",
+      "remediation": "Upgrade to OpenSSH 7.4 or later"
+    },
+    "OpenSSH_4.3": {
+      "cve": "CVE-2008-5161",
+      "severity": "MEDIUM",
+      "cvss": 4.0,
+      "description": "CBC mode information disclosure vulnerability",
+      "remediation": "Upgrade to a modern OpenSSH version and use CTR/GCM ciphers"
+    },
+    "vsftpd 2.3.4": {
+      "cve": "CVE-2011-2523",
+      "severity": "CRITICAL",
+      "cvss": 10.0,
+      "description": "Backdoor command execution vulnerability in vsftpd 2.3.4",
+      "remediation": "Upgrade to vsftpd 3.0.0 or later from official sources"
+    },
+    "vsftpd 2.0.5": {
+      "cve": "CVE-2008-4726",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Denial of service via memory consumption on large file downloads",
+      "remediation": "Upgrade to vsftpd 2.1.0 or later"
+    },
+    "ProFTPD 1.3.5": {
+      "cve": "CVE-2015-3306",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Remote code execution via mod_copy module allowing arbitrary file read/write",
+      "remediation": "Upgrade to ProFTPD 1.3.5e or later"
+    },
+    "Microsoft-IIS/7.5": {
+      "cve": "CVE-2017-7269",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Buffer overflow in WebDAV service allows remote code execution",
+      "remediation": "Upgrade to IIS 10.0 or apply security patch KB3042553"
+    },
+    "Microsoft-IIS/6.0": {
+      "cve": "CVE-2017-7269",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Buffer overflow RCE via crafted PROPFIND request to WebDAV",
+      "remediation": "Migrate to a modern version of IIS (10.0+)"
+    },
+    "PHP/5.6": {
+      "cve": "CVE-2019-11043",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Remote code execution via env_path_info underflow in PHP-FPM",
+      "remediation": "Upgrade to PHP 7.4 or later"
+    },
+    "PHP/7.0": {
+      "cve": "CVE-2019-11043",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Remote code execution via env_path_info underflow in PHP-FPM",
+      "remediation": "Upgrade to PHP 7.2.24 / 7.3.11 or later"
+    },
+    "Exim 4.87": {
+      "cve": "CVE-2019-10149",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "The Return of the WIZard - RCE via crafted recipient address",
+      "remediation": "Upgrade to Exim 4.92 or later"
+    },
+    "Postfix 2.11": {
+      "cve": "CVE-2017-10140",
+      "severity": "MEDIUM",
+      "cvss": 5.9,
+      "description": "Privilege escalation via symlink attack on postdrop setgid binary",
+      "remediation": "Upgrade to Postfix 3.2.2 or later"
+    },
+    "MySQL 5.5": {
+      "cve": "CVE-2016-6662",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Remote root code execution via configuration file manipulation",
+      "remediation": "Upgrade to MySQL 5.7 or later"
+    },
+    "MySQL 5.6": {
+      "cve": "CVE-2016-6662",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Remote root code execution via configuration file manipulation",
+      "remediation": "Upgrade to MySQL 5.7.15 or later"
+    },
+    "PostgreSQL 9.3": {
+      "cve": "CVE-2019-10164",
+      "severity": "HIGH",
+      "cvss": 8.8,
+      "description": "Stack buffer overflow via setting a password with a crafted length",
+      "remediation": "Upgrade to PostgreSQL 11.4 or later"
+    },
+    "Tomcat/8.5.0": {
+      "cve": "CVE-2020-1938",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Ghostcat - AJP connector file read/include vulnerability",
+      "remediation": "Upgrade to Tomcat 8.5.51 / 9.0.31 or later"
+    },
+    "Tomcat/7.0": {
+      "cve": "CVE-2017-12617",
+      "severity": "HIGH",
+      "cvss": 8.1,
+      "description": "Remote code execution via JSP upload when PUT method enabled",
+      "remediation": "Upgrade to Tomcat 7.0.82 or later"
+    },
+    "Redis/3.2": {
+      "cve": "CVE-2018-11218",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Heap corruption and RCE via crafted commands to Lua scripting engine",
+      "remediation": "Upgrade to Redis 4.0.10 / 5.0 or later"
+    },
+    "Elasticsearch/1.4": {
+      "cve": "CVE-2015-1427",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Remote code execution via Groovy scripting engine sandbox bypass",
+      "remediation": "Upgrade to Elasticsearch 1.4.3 or later"
+    },
+    "MongoDB 3.4": {
+      "cve": "CVE-2017-15535",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Authentication bypass when authorization is not enabled",
+      "remediation": "Enable authentication and upgrade to MongoDB 3.6+"
+    },
+    "Samba 4.5.9": {
+      "cve": "CVE-2017-7494",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "SambaCry - Remote code execution via writable share (EternalRed)",
+      "remediation": "Upgrade to Samba 4.6.4 or later"
+    },
+    "OpenSSL/1.0.1": {
+      "cve": "CVE-2014-0160",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Heartbleed - TLS heartbeat extension memory disclosure",
+      "remediation": "Upgrade to OpenSSL 1.0.1g or later"
+    },
+    "OpenSSL/1.0.2": {
+      "cve": "CVE-2016-2107",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Padding oracle in AES-NI CBC MAC check",
+      "remediation": "Upgrade to OpenSSL 1.0.2h or later"
+    },
+    "Dovecot 2.2": {
+      "cve": "CVE-2019-11500",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Buffer overflow in IMAP/ManageSieve protocol parsers",
+      "remediation": "Upgrade to Dovecot 2.3.7.2 or later"
+    },
+    "Squid/3.5": {
+      "cve": "CVE-2019-12526",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Heap buffer overflow in URN processing allows RCE",
+      "remediation": "Upgrade to Squid 4.9 or later"
+    },
+    "lighttpd/1.4.35": {
+      "cve": "CVE-2015-3200",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "description": "Log injection via malformed HTTP headers",
+      "remediation": "Upgrade to lighttpd 1.4.36 or later"
+    },
+    "Node.js/8.0": {
+      "cve": "CVE-2018-12115",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Out-of-bounds write in Buffer.fill() / Buffer.alloc()",
+      "remediation": "Upgrade to Node.js 10.x LTS or later"
+    },
+    "Jenkins/2.150": {
+      "cve": "CVE-2019-1003000",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Remote code execution via crafted Pipeline script sandbox bypass",
+      "remediation": "Upgrade to Jenkins 2.164 or later"
+    },
+    "Jetty/9.2": {
+      "cve": "CVE-2017-7657",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "HTTP request smuggling via chunk length parsing",
+      "remediation": "Upgrade to Jetty 9.4.11 or later"
+    },
+    "Webmin/1.920": {
+      "cve": "CVE-2019-15107",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Unauthenticated remote code execution via password reset page",
+      "remediation": "Upgrade to Webmin 1.930 or later"
+    },
+    "Drupal/7.57": {
+      "cve": "CVE-2018-7600",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "Drupalgeddon 2 - Remote code execution via Form API",
+      "remediation": "Upgrade to Drupal 7.58 or 8.5.1 or later"
+    },
+    "WordPress/4.7": {
+      "cve": "CVE-2017-1001000",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Content injection via REST API endpoint privilege escalation",
+      "remediation": "Upgrade to WordPress 4.7.2 or later"
+    },
+    "Joomla/3.7.0": {
+      "cve": "CVE-2017-8917",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "description": "SQL injection in com_fields component",
+      "remediation": "Upgrade to Joomla 3.7.1 or later"
+    },
+    "Bind 9.10": {
+      "cve": "CVE-2016-2776",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "description": "Assertion failure in buffer.c allows remote DoS",
+      "remediation": "Upgrade to BIND 9.10.4-P3 or later"
+    }
+  },
+  "risky_ports": {
+    "21": {
+      "service": "FTP",
+      "risk": "HIGH",
+      "description": "FTP transmits credentials in plaintext. Consider using SFTP instead.",
+      "remediation": "Disable FTP and use SFTP (SSH File Transfer Protocol) on port 22"
+    },
+    "23": {
+      "service": "Telnet",
+      "risk": "CRITICAL",
+      "description": "Telnet transmits all data including passwords in plaintext with no encryption.",
+      "remediation": "Disable Telnet entirely and use SSH (port 22) for remote access"
+    },
+    "25": {
+      "service": "SMTP",
+      "risk": "MEDIUM",
+      "description": "Open SMTP relay can be abused for spam and phishing attacks.",
+      "remediation": "Ensure SMTP requires authentication and uses STARTTLS encryption"
+    },
+    "53": {
+      "service": "DNS",
+      "risk": "MEDIUM",
+      "description": "Open DNS resolver can be used for DNS amplification DDoS attacks.",
+      "remediation": "Restrict DNS to authorized clients only, disable recursion for external queries"
+    },
+    "110": {
+      "service": "POP3",
+      "risk": "HIGH",
+      "description": "POP3 transmits email credentials in plaintext.",
+      "remediation": "Use POP3S (port 995) with TLS encryption instead"
+    },
+    "135": {
+      "service": "MS-RPC",
+      "risk": "HIGH",
+      "description": "Windows RPC endpoint mapper frequently targeted by worms and exploits.",
+      "remediation": "Block port 135 at the firewall for external access"
+    },
+    "139": {
+      "service": "NetBIOS",
+      "risk": "HIGH",
+      "description": "NetBIOS session service exposes file shares and is targeted by malware.",
+      "remediation": "Disable NetBIOS over TCP/IP and block at the firewall"
+    },
+    "143": {
+      "service": "IMAP",
+      "risk": "HIGH",
+      "description": "IMAP transmits email credentials in plaintext.",
+      "remediation": "Use IMAPS (port 993) with TLS encryption instead"
+    },
+    "445": {
+      "service": "SMB",
+      "risk": "CRITICAL",
+      "description": "SMB is frequently targeted (EternalBlue, WannaCry). Extremely dangerous if exposed.",
+      "remediation": "Block SMB at the perimeter firewall, never expose to the internet"
+    },
+    "512": {
+      "service": "rexec",
+      "risk": "CRITICAL",
+      "description": "Remote execution service with weak authentication.",
+      "remediation": "Disable rexec and use SSH for remote command execution"
+    },
+    "513": {
+      "service": "rlogin",
+      "risk": "CRITICAL",
+      "description": "Remote login with no encryption, easily spoofable.",
+      "remediation": "Disable rlogin and use SSH for remote access"
+    },
+    "514": {
+      "service": "rsh",
+      "risk": "CRITICAL",
+      "description": "Remote shell with IP-based authentication only, trivially exploitable.",
+      "remediation": "Disable rsh and use SSH for remote shell access"
+    },
+    "1433": {
+      "service": "MS-SQL",
+      "risk": "HIGH",
+      "description": "Microsoft SQL Server exposed to network. Target for brute-force attacks.",
+      "remediation": "Restrict access to trusted IPs only, never expose to the internet"
+    },
+    "1521": {
+      "service": "Oracle DB",
+      "risk": "HIGH",
+      "description": "Oracle Database listener exposed. Target for TNS poisoning attacks.",
+      "remediation": "Restrict listener to localhost or trusted IPs, enable TNS encryption"
+    },
+    "3306": {
+      "service": "MySQL",
+      "risk": "HIGH",
+      "description": "MySQL database exposed to network. Target for brute-force and injection.",
+      "remediation": "Bind MySQL to localhost (127.0.0.1) and use SSH tunnels for remote access"
+    },
+    "3389": {
+      "service": "RDP",
+      "risk": "HIGH",
+      "description": "Remote Desktop Protocol is a frequent target for brute-force and BlueKeep exploits.",
+      "remediation": "Use VPN for RDP access, enable NLA, and restrict to trusted IPs"
+    },
+    "5432": {
+      "service": "PostgreSQL",
+      "risk": "MEDIUM",
+      "description": "PostgreSQL database exposed to network.",
+      "remediation": "Bind to localhost and use pg_hba.conf to restrict client connections"
+    },
+    "5900": {
+      "service": "VNC",
+      "risk": "HIGH",
+      "description": "VNC often uses weak authentication and no encryption.",
+      "remediation": "Use VNC over SSH tunnel, enforce strong passwords"
+    },
+    "6379": {
+      "service": "Redis",
+      "risk": "CRITICAL",
+      "description": "Redis often runs without authentication. Allows arbitrary command execution.",
+      "remediation": "Enable requirepass, bind to localhost, never expose to the internet"
+    },
+    "8080": {
+      "service": "HTTP-Alt",
+      "risk": "LOW",
+      "description": "Alternative HTTP port often used for development/proxy servers.",
+      "remediation": "Ensure proper authentication and disable directory listing"
+    },
+    "9200": {
+      "service": "Elasticsearch",
+      "risk": "CRITICAL",
+      "description": "Elasticsearch often runs without authentication, exposing all indexed data.",
+      "remediation": "Enable X-Pack security, bind to localhost, never expose to the internet"
+    },
+    "27017": {
+      "service": "MongoDB",
+      "risk": "CRITICAL",
+      "description": "MongoDB often runs without authentication, exposing all databases.",
+      "remediation": "Enable authentication, bind to localhost, use TLS"
+    }
+  },
+  "security_headers": {
+    "Strict-Transport-Security": {
+      "description": "HSTS - Forces browsers to use HTTPS, preventing downgrade attacks",
+      "severity": "HIGH",
+      "recommended_value": "max-age=31536000; includeSubDomains; preload"
+    },
+    "Content-Security-Policy": {
+      "description": "CSP - Prevents XSS, clickjacking, and code injection attacks",
+      "severity": "HIGH",
+      "recommended_value": "default-src 'self'; script-src 'self'"
+    },
+    "X-Content-Type-Options": {
+      "description": "Prevents MIME type sniffing attacks",
+      "severity": "MEDIUM",
+      "recommended_value": "nosniff"
+    },
+    "X-Frame-Options": {
+      "description": "Prevents clickjacking by controlling iframe embedding",
+      "severity": "MEDIUM",
+      "recommended_value": "DENY"
+    },
+    "X-XSS-Protection": {
+      "description": "Enables browser XSS filtering (legacy, but still useful)",
+      "severity": "LOW",
+      "recommended_value": "1; mode=block"
+    },
+    "Referrer-Policy": {
+      "description": "Controls how much referrer information is shared with other sites",
+      "severity": "LOW",
+      "recommended_value": "strict-origin-when-cross-origin"
+    },
+    "Permissions-Policy": {
+      "description": "Controls which browser features the site can use (camera, microphone, etc.)",
+      "severity": "MEDIUM",
+      "recommended_value": "camera=(), microphone=(), geolocation=()"
+    }
+  }
+}

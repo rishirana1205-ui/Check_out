@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Phishing Detector | NeuroShield</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Load FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h1>NeuroShield</h1>
+            </div>
+            <p class="subtitle">Advanced Machine Learning Email Threat Analysis</p>
+        </header>
+
+        <main>
+            <div class="analyzer-card glass-panel">
+                <div class="input-section">
+                    <label for="emailInput">Analyze Email Content</label>
+                    <textarea id="emailInput" placeholder="Paste the suspicious email text or body here..."></textarea>
+                    
+                    <button id="analyzeBtn" class="primary-btn">
+                        <span>Initiate Scan</span>
+                        <i class="fa-solid fa-radar"></i>
+                    </button>
+                </div>
+
+                <div id="resultsSection" class="results-section hidden">
+                    <div class="scan-line"></div>
+                    <div class="result-header">
+                        <h2 id="resultTitle">Analysis Complete</h2>
+                        <div id="confidenceScore" class="confidence-badge">--% Confidence</div>
+                    </div>
+                    
+                    <div class="verdict-container" id="verdictContainer">
+                        <div class="verdict-icon" id="verdictIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="verdict-text">
+                            <h3 id="verdictLabel">Safe</h3>
+                            <p id="verdictDesc">Processing details...</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics">
+                        <div class="metric-box">
+                            <span class="metric-label">Threat Level Indicator</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="threatLevelBar" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
